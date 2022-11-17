@@ -4,11 +4,11 @@
                          platform:Faker::Game.platform,
                          location:Faker::Address.country)
 
-  game  = player.games.create!(games: Faker::Game.title , rank: Faker::Games::LeagueOfLegends.rank , genre:Faker::Esport.event) #=> "Bronze V", genre: Faker::Game.genre #=> "First-person shooter")
+  game  = player.games.create!(game: Faker::Game.title , rank: Faker::Games::LeagueOfLegends.rank , genre:Faker::Esport.event) #=> "Bronze V", genre: Faker::Game.genre #=> "First-person shooter")
 
 
 
-  player.game.esports.create!(team: Faker::Esport.team ,
+  bored = player.esports.create!(team: Faker::Esport.team ,
                                    league: Faker::Esport.league,
                                    wins:Faker::Esport.event
       )
