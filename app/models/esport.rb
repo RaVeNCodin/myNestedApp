@@ -1,4 +1,4 @@
 class Esport < ApplicationRecord
-  belongs_to :game
+  belongs_to :game , dependent: :destroy
 
 end

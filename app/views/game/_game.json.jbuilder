@@ -1,6 +1,6 @@
-json.game_id game.game_id
+json.id game.id
+json.player_id game.player_id
 json.game game.game
 json.rank game.rank
-json.esports game.esports
 json.genre game.genre
 
